@@ -1,0 +1,39 @@
+<div class="contenedor">
+    <div class="contenedor-logo">
+        <img class="logo" src="../../../assets/logo/logoargprog.jpg" alt="">
+    </div>
+    <div class="contenedor-nav" >
+        <ul>
+            <li>
+                <a href="">Acerca De</a>
+            </li>
+            <li>
+                <a href="">Skills</a>
+            </li>
+            <li>
+                <a href="">Proyectos</a>
+            </li>
+            <li>
+                <a href="">Contacto</a>
+            </li>
+        </ul>
+    </div>
+    <div class="contenedor-hamburgerMenu">
+        <img (click)="hamburguerMenu()"  class="hamburger-menu" [src]="hamburgerIcon" alt="">
+    </div>
+    
+    <div class="menuDesplegable-contenedor" [ngClass]="{'mostrarMenu': hamburgerMenuClases}">
+        <div class="menuDesplegable-transparente" (click)="hamburguerMenu()" ></div>
+        <div class="contenedor-ul-img">
+            <div class="contenedor-img">
+                <img (click)="hamburguerMenu()" src="../../../assets/menu/icons8-close-100.png" alt="">
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>Acerca De</li>
+                <li>Skills</li>
+                <li>Proyectos</li>
+            </ul>
+        </div>
+    </div>
+</div>
