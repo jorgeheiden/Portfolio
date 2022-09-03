@@ -1,112 +1,115 @@
 
-.contenedor{
-    width: 100%;
-    min-height: 100vh;
-    background-image: url("../../../assets/background/5.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+.contenedor {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../../../assets/background/5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  scroll-snap-align: start;
+  position: relative;
 }
-.contenedor-home{
-   display: flex;
-   margin-top: 5rem;
-   width: 100vw;
-   min-height: 60vh;
+.contenedor-home {
+  display: flex;
+  margin-top: 5rem;
+  width: 100vw;
+  min-height: 60vh;
 }
-.contenedor-textoVertical{
-    position: fixed;
-    top: 58%;
-    display: flex;
-    width: 10%;
+.contenedor-textoVertical {
+  color: #666666;
+  top: 58%;
+  display: flex;
+  width: 10%;
+  z-index: 10;
+  position: fixed;
 }
-.texto-vertical{
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    margin-left: 9%;
-    font-family: 'Roboto Mono', monospace;
+.texto-vertical {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  margin-left: 9%;
+  font-family: "Roboto Mono", monospace;
 }
-.contenedor-introduccion{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    padding-left: 13%;
+.contenedor-introduccion {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding-left: 15%;
 }
-.contenedor-introduccion p{
-    font-family: 'Inter', sans-serif;
-    font-family: 'League Spartan', sans-serif;
-    font-weight: 600;
+.contenedor-introduccion p {
+  font-family: "Inter", sans-serif;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
 }
-.p1{
-    
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: rgb(7, 66, 7);
+.p1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: rgb(7, 66, 7);
 }
-.p2{
-    font-size: 4.5rem; 
+.p2 {
+  font-size: 4.5rem;
 }
-.p3{
-    font-size: 3.5rem;
-    font-weight: 600;
+.p3 {
+  font-size: 3.5rem;
+  font-weight: 600;
 }
-.contenedor-iconos{
-    position: fixed;
-    right: 0;
-    top: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 10%;
+.contenedor-iconos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 10%;
+  z-index: 10;
+  position: fixed;
+  right: 0;
+  bottom: 4rem;
 }
-.contenedor-iconos ul{
-    padding: 0;
-    margin: 0;
+.contenedor-iconos ul {
+  padding: 0;
+  margin: 0;
 }
-.contenedor-iconos li{
-    
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-top: 1rem;
-    list-style: none;
-    cursor: pointer;
+.contenedor-iconos li {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  list-style: none;
+  cursor: pointer;
 }
-.linkedin{
-    background: url(../../../assets/redes/icons8-linkedin-circled-100.png);
-    background-size: contain;
-    transition: background 0.5s ease-out;
+.linkedin {
+  background: url("../../../assets/redes/icons8-linkedin-circled-gray.svg");
+  background-size: contain;
+  transition: background 0.5s ease-out;
 }
-.linkedin:hover{
-    background: url(../../../assets/redes/icons8-linkedin-circled-black.png);
-    background-size: contain;
-    transition: background 0.5s ease-out;
+.linkedin:hover {
+  background: url("../../../assets/redes/icons8-linkedin-circled-green.svg");
+  background-size: contain;
+  transition: background 0.5s ease-out;
 }
-.github{
-    background: url(../../../assets/redes/icons8-github-100.png);
-    background-size: contain;
-    transition: background 0.5s ease-out;
+.github {
+  background: url("../../../assets/redes/github-gray.png");
+  background-size: contain;
+  transition: background 0.5s ease-out;
 }
-.github:hover{
-    background: url(../../../assets/redes/icons8-github-100-black.png);
-    background-size: contain;
-    transition: background 0.5s ease-out;
+.github:hover {
+  background: url("../../../assets/redes/github-green.png");
+  background-size: contain;
+  transition: background 0.5s ease-out;
 }
-.mail{
-    background: url(../../../assets/redes/mail.png);
-    background-size: contain;
-    transition: background 0.5s ease-out;
+.mail {
+  background: url("../../../assets/redes/email-gray.png");
+  background-size: contain;
+  transition: background 0.5s ease-out;
 }
-.mail:hover{
-    background: url(../../../assets/redes/mail-black.png);
-    background-size: contain;
-    transition: background 0.5s ease-out;
+.mail:hover {
+  background: url("../../../assets/redes/email-green.png");
+  background-size: contain;
+  transition: background 0.5s ease-out;
 }
-.twitter{
-    background: url(../../../assets/redes/icons8-twitter-circled-100.png);
-    background-size: contain;
-    transition: background 0.5s ease-out;
+.twitter {
+  background: url("../../../assets/redes/twitter-gray.png");
+  background-size: contain;
+  transition: background 0.5s ease-out;
 }
-.twitter:hover{
-    background: url(../../../assets/redes/icons8-twitter-circled-black.png);
-    background-size: contain;
-    transition: background 0.5s ease-out;
+.twitter:hover {
+  background: url("../../../assets/redes/twitter-green.png");
+  background-size: contain;
+  transition: background 0.5s ease-out;
 }

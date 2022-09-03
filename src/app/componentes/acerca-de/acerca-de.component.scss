@@ -5,6 +5,10 @@
     min-height: 100vh;
     width: 100%;
     background-color: rgb(17, 17, 17);
+
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
 }
 .presentacion{
     width: 43%;
@@ -14,6 +18,9 @@
     font-size: 3rem;
     margin-top: 2.5rem;
     color: white;
+}
+.presentacion span{
+    color: #27AE60;
 }
 .presentacion p{
     font-family: 'Roboto Mono', monospace;
@@ -41,8 +48,25 @@
     color: white;
     list-style-type: none;
     font-family: 'Roboto Mono', monospace;
+    margin-bottom: 0.8rem;
 }
-
-
+.formacion-desarrollador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.formacion-desarrollador h1{
+    font-family: 'Inter', sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    padding-top: 0.5rem;
+    text-decoration: underline;
+}
+.formacion-formal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
