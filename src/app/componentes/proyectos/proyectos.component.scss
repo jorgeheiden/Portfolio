@@ -74,3 +74,29 @@
     width: 2.2rem;
     height: 2.2rem;
 }
+
+/*************************************************/
+@media only screen and (max-width: 575px){
+    .contenedor ul{
+        width: 90%;
+    }
+    .contenedor li{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .proyecto img{
+        width: 22.5rem;
+        height: 16rem; 
+    }
+    .detalles{
+        width: 22.5rem;
+        height: 16rem;
+    }
+    .githublink img{
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+    .titulo h1{
+        margin-top: 1rem;
+    }
+}

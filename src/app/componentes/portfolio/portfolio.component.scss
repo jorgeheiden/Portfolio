@@ -6,7 +6,12 @@
     overflow-x: hidden;
 }
 .seccion{
-    height: 100vh;
+   /* height: 100vh;
     scroll-snap-align: start;
-    position: relative;
+    position: relative;*/
+}
+@media only screen and (max-width: 575px){
+    .contenedor{
+        scroll-snap-type: none;
+    }
 }

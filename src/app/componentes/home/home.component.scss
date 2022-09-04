@@ -1,10 +1,14 @@
-
+  div{
+    
+  }
 .contenedor {
   width: 100%;
   min-height: 100vh;
   background-image: url("../../../assets/background/5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+
 
   scroll-snap-align: start;
   position: relative;
@@ -47,6 +51,7 @@
 }
 .p2 {
   font-size: 4.5rem;
+  
 }
 .p3 {
   font-size: 3.5rem;
@@ -73,6 +78,9 @@
   list-style: none;
   cursor: pointer;
 }
+.contenedor-iconosMobile{
+  display: none;
+}
 .linkedin {
   background: url("../../../assets/redes/icons8-linkedin-circled-gray.svg");
   background-size: contain;
@@ -83,10 +91,16 @@
   background-size: contain;
   transition: background 0.5s ease-out;
 }
+.linkedin:active{
+  transform: scale(0.90);
+}
 .github {
   background: url("../../../assets/redes/github-gray.png");
   background-size: contain;
   transition: background 0.5s ease-out;
+}
+.github:active{
+  transform: scale(0.90);
 }
 .github:hover {
   background: url("../../../assets/redes/github-green.png");
@@ -98,6 +112,9 @@
   background-size: contain;
   transition: background 0.5s ease-out;
 }
+.mail:active{
+  transform: scale(0.90);
+}
 .mail:hover {
   background: url("../../../assets/redes/email-green.png");
   background-size: contain;
@@ -108,8 +125,91 @@
   background-size: contain;
   transition: background 0.5s ease-out;
 }
+.twitter:active{
+  transform: scale(0.90);
+}
 .twitter:hover {
   background: url("../../../assets/redes/twitter-green.png");
   background-size: contain;
   transition: background 0.5s ease-out;
+}
+
+
+/********************************/
+@media only screen and (max-width: 575px) {
+  .contenedor{
+    background-image: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .contenedor-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+  }
+  .contenedor-introduccion{
+    padding: 0;
+    width: 90%;
+  }
+  .contenedor-textoVertical{
+    display: none;
+  }
+  .contenedor-iconos{
+    display: none;
+  }
+  .contenedor-iconosMobile{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 15vh;
+  }
+  .contenedor-iconosMobile ul{
+    display: flex;
+    
+    padding: 0;
+  }
+  .contenedor-iconosMobile li{
+    width: 2.5rem;
+    height: 2.5rem;
+    list-style: none;
+    margin: 0 0.5rem 0 0.5rem;
+  }
+  .m{
+    background: url("../../../assets/redes/mail.png");
+    background-size: contain;
+  }
+  .l{
+    background: url("../../../assets/redes/icons8-linkedin-circled-100.png");
+    background-size: contain;
+  }
+  .g{
+    background: url("../../../assets/redes/icons8-github-100.png");
+    background-size: contain;
+  }
+  .t{
+    background: url("../../../assets/redes/icons8-twitter-circled-100.png");
+    background-size: contain;
+  }
+  .m:active{
+    transform: scale(0.80);
+  }
+  .l:active{
+    transform: scale(0.80);
+  }
+  .g:active{
+    transform: scale(0.80);
+  }
+  .t:active{
+    transform: scale(0.80);
+  }
+  .p1{
+    font-size: 2.1rem;
+  }
+  .p2{
+    font-size: 3.8rem;
+  }
+  .p3{
+    font-size: 2.8rem;
+  }
 }

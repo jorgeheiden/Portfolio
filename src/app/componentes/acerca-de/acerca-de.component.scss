@@ -1,72 +1,91 @@
-.contenedor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    background-color: rgb(17, 17, 17);
 
-    height: 100vh;
-    scroll-snap-align: start;
-    position: relative;
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(17, 17, 17);
+
+  scroll-snap-align: start;
+  position: relative;
 }
-.presentacion{
-    width: 43%;
+.presentacion {
+  width: 43%;
 }
-.presentacion h1{
-    font-family: 'Roboto Mono', monospace;
-    font-size: 3rem;
-    margin-top: 2.5rem;
-    color: white;
+.presentacion h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 3rem;
+  margin-top: 2.5rem;
+  color: white;
 }
-.presentacion span{
-    color: #27AE60;
+.presentacion span {
+  color: #27ae60;
 }
-.presentacion p{
-    font-family: 'Roboto Mono', monospace;
-    margin-top: 2rem;
-    font-size: 1.1rem;
-    color: rgb(235, 235, 235);
+.presentacion p {
+  font-family: "Roboto Mono", monospace;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: rgb(235, 235, 235);
 }
-.formacion{
-    display: flex;
+.formacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(17, 17, 17);
+  width: 43%;
+}
+.formacion ul {
+  width: 84%;
+  min-height: 30vh;
+  background-color: #1b1a1b;
+  border-radius: 7px;
+  box-shadow: -1rem 0 3rem #000;
+  padding-left: 1.1rem;
+}
+.formacion li {
+  color: white;
+  list-style-type: none;
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 0.8rem;
+}
+.formacion-desarrollador {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.formacion-desarrollador h1 {
+  font-family: "Inter", sans-serif;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  padding-top: 0.5rem;
+  text-decoration: underline;
+}
+.formacion-formal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/******************************************/
+@media only screen and (max-width: 575px) {
+  .contenedor {
     flex-direction: column;
-    align-items: center;
-    background-color: rgb(17, 17, 17);
-    width: 43%;
-}
-.formacion ul{
-    width: 84%;
-    min-height: 30vh;
-    background-color: #1b1a1b;
-    border-radius: 7px;
-    box-shadow: -1rem 0 3rem #000;
-    padding-left: 1.1rem;
-    
-}
-.formacion li{
-    color: white;
-    list-style-type: none;
-    font-family: 'Roboto Mono', monospace;
-    margin-bottom: 0.8rem;
-}
-.formacion-desarrollador{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.formacion-desarrollador h1{
-    font-family: 'Inter', sans-serif;
-    font-family: 'League Spartan', sans-serif;
-    font-weight: 600;
+  }
+  .presentacion {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  .presentacion h1{
     font-size: 2rem;
-    padding-top: 0.5rem;
-    text-decoration: underline;
-}
-.formacion-formal{
-    display: flex;
+    line-height: 3.2rem;
+  }
+  .formacion {
     flex-direction: column;
-    justify-content: center;
+    width: 90%;
+  }
+  .formacion ul {
+    width: 100%;
+  }
 }
-
-
