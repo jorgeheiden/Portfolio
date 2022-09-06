@@ -1,9 +1,11 @@
+
 .contenedor{
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
+    padding-bottom: 5rem;
     
     background-color: rgb(17, 17, 17);
     scroll-snap-align: start;
@@ -18,12 +20,13 @@
     margin: 0;
     padding: 0;
 }
-.contenedor li{
+.proyecto{
     list-style: none;
     margin: 1rem 1rem 1rem 1rem;
     box-shadow: -1rem 0 3rem rgb(34, 34, 34);
     border-radius: 10px;
 }
+
 .proyecto img{
     width: 20rem;
     height: 15rem;
@@ -35,7 +38,7 @@
 .titulo h1{
     font-size: 3rem;
     color: white;
-    margin: 2rem 0 3.5rem 0;
+    margin: 1rem 0 1rem 0;
     font-family: 'Inter', sans-serif;
     font-family: 'League Spartan', sans-serif;
     font-weight: 600;
@@ -58,7 +61,7 @@
     
 }
 .proyecto:hover .detalles{
-    opacity: 0.8;
+    opacity: 0.9;
     transform: scale(1.01);
 }
 .detalles h1{
@@ -66,6 +69,10 @@
 }
 .detalles p{
     width: 80%;
+    color: rgb(255, 255, 255);
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+    text-align: center;
 }
 .detalles img{
     margin: 0 0.5rem 1.5rem 0.5rem;
@@ -85,16 +92,17 @@
         margin-right: 0;
     }
     .proyecto img{
-        width: 22.5rem;
+        width: 22rem;
         height: 16rem; 
     }
+    
     .detalles{
-        width: 22.5rem;
+        width: 22rem;
         height: 16rem;
     }
     .githublink img{
-        width: 2.8rem;
-        height: 2.8rem;
+        width: 2.3rem;
+        height: 2.3rem;
     }
     .titulo h1{
         margin-top: 1rem;

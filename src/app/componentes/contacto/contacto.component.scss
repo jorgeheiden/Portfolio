@@ -1,0 +1,83 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    margin: 0;
+}
+h1{
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0 0.5rem 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    min-height: 70vh;
+}
+input{
+    border: none;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    height: 2.5rem;
+    padding-left: 1rem;
+}
+input::placeholder{
+    color: rgb(131, 131, 131);
+}
+input:focus{
+    border: 2px solid white;
+}
+label{
+    color: white;
+    margin-bottom: 0.5rem;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+}
+textarea{
+    border: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    outline: none;
+}
+textarea::placeholder{
+    color: rgb(131, 131, 131);
+}
+textarea:focus{
+    border: 2px solid white;
+}
+button{
+    color: white;
+    background-color: blue;
+    height: 2.5rem;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgb(1, 1, 153);
+}
+button:active{
+    background-color: rgb(23, 23, 122);
+    transform: scale(0.95);
+}
+@media only screen and (max-width: 575px){
+    form{
+        width: 90%;
+        min-height: 70vh;
+    }
+}

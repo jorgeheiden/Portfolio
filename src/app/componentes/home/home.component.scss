@@ -72,11 +72,14 @@
   margin: 0;
 }
 .contenedor-iconos li {
-  width: 2.5rem;
-  height: 2.5rem;
   margin-top: 1rem;
   list-style: none;
   cursor: pointer;
+}
+.contenedor-iconos a{
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .contenedor-iconosMobile{
   display: none;
@@ -138,8 +141,11 @@
 /********************************/
 @media only screen and (max-width: 575px) {
   .contenedor{
-    background-image: none;
-    background-color: rgb(255, 255, 255);
+   /* background-image: none;
+    background-color: rgb(255, 255, 255);*/
+    background: url("../../../assets/background/5.jpg");
+    background-size: cover;
+    
   }
   .contenedor-home{
     display: flex;
@@ -166,15 +172,24 @@
   }
   .contenedor-iconosMobile ul{
     display: flex;
-    
     padding: 0;
   }
   .contenedor-iconosMobile li{
-    width: 2.5rem;
-    height: 2.5rem;
+
     list-style: none;
     margin: 0 0.5rem 0 0.5rem;
   }
+  
+  .contenedor-iconosMobile a{
+    display: block;
+    width: 2.6rem;
+    height: 2.6rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  
   .m{
     background: url("../../../assets/redes/mail.png");
     background-size: contain;
@@ -203,6 +218,7 @@
   .t:active{
     transform: scale(0.80);
   }
+  
   .p1{
     font-size: 2.1rem;
   }
