@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-portfolio',
@@ -10,6 +11,8 @@ export class PortfolioComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
+  
 }

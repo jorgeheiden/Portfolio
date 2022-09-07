@@ -1,4 +1,6 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,10 +10,10 @@ import { Component, OnInit } from '@angular/core';
 export class NavBarComponent implements OnInit {
   hamburgerMenuClases = false
   hamburgerIcon = "../../../assets/menu/icons8-menu.svg"
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+  constructor(private viewportScroller: ViewportScroller) { }
+
+  ngOnInit(): void {}
 
   hamburguerMenu(){
    if(this.hamburgerMenuClases == false){
@@ -22,4 +24,12 @@ export class NavBarComponent implements OnInit {
     this.hamburgerMenuClases = false
    }
   }
+
+ scroll(skills:any){
+  skills.scrollIntoView({ block: 'start',  behavior: 'smooth', inline: 'nearest' })
+ }
+
+ scrollALaSeccion(data:string){
+   document.getElementById(data)?.scrollIntoView()
+ }
 }

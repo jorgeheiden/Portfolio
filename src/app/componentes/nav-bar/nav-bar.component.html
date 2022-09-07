@@ -1,50 +1,69 @@
 <div class="contenedor">
-    <div class="contenedor-logo">
-        <img class="logo" src="../../../assets/logo/logoargprog.jpg" alt="">
+  <div class="contenedor-logo">
+    <img class="logo" src="../../../assets/logo/logoargprog.jpg" alt="" />
+  </div>
+  <div class="contenedor-nav">
+    <ul>
+      <li>
+        <a (click)="scrollALaSeccion('acercaDe')">Acerca De</a>
+      </li>
+      <li>
+        <a (click)="scrollALaSeccion('skills')">Skills</a>
+      </li>
+      <li>
+        <a (click)="scrollALaSeccion('proyectos')">Proyectos</a>
+      </li>
+      <li>
+        <a href="" routerLink="/contacto">Contacto</a>
+      </li>
+      <li class="contenedor-cv">
+        <a
+          class="cv"
+          target="_blank"
+          href="https://firebasestorage.googleapis.com/v0/b/imgproyectos-d5ba4.appspot.com/o/CV%2FCV%20Jorge%20Heidenreich%20Dev.pdf?alt=media&token=e940c5b4-604f-4be2-b6e5-22e66ef22861"
+          >CV</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="contenedor-hamburgerMenu">
+    <img
+      (click)="hamburguerMenu()"
+      class="hamburger-menu"
+      [src]="hamburgerIcon"
+      alt=""
+    />
+  </div>
+
+  <div
+    class="menuDesplegable-contenedor"
+    [ngClass]="{ mostrarMenu: hamburgerMenuClases }"
+  >
+    <div class="menuDesplegable-transparente" (click)="hamburguerMenu()"></div>
+    <div class="contenedor-ul-img">
+      <div class="contenedor-img">
+        <img
+          (click)="hamburguerMenu()"
+          src="../../../assets/menu/icons8-close-100.png"
+          alt=""
+        />
+      </div>
+      <ul>
+        <li>
+          <a (click)="hamburguerMenu()" href="#acercaDe">Acerca De</a>
+        </li>
+        <li>
+          <a (click)="hamburguerMenu()" href="#skills">Skills</a>
+        </li>
+        <li>
+          <a (click)="hamburguerMenu()" href="#proyectos">Proyectos</a>
+        </li>
+        <li>
+          <a (click)="hamburguerMenu()" href="" routerLink="/contacto"
+            >Contacto</a
+          >
+        </li>
+      </ul>
     </div>
-    <div class="contenedor-nav" >
-        <ul>
-            <li>
-                <a href="#acercaDe">Acerca De</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#proyectos">Proyectos</a>
-            </li>
-            <li>
-                <a href="" routerLink="/contacto">Contacto</a>
-            </li>
-            <li class="contenedor-cv">
-                <a class="cv" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/imgproyectos-d5ba4.appspot.com/o/CV%2FCV%20Jorge%20Heidenreich%20Dev.pdf?alt=media&token=e940c5b4-604f-4be2-b6e5-22e66ef22861">CV</a>
-            </li>
-        </ul>
-    </div>
-    <div class="contenedor-hamburgerMenu">
-        <img (click)="hamburguerMenu()"  class="hamburger-menu" [src]="hamburgerIcon" alt="">
-    </div>
-    
-    <div class="menuDesplegable-contenedor" [ngClass]="{'mostrarMenu': hamburgerMenuClases}">
-        <div class="menuDesplegable-transparente" (click)="hamburguerMenu()" ></div>
-        <div class="contenedor-ul-img">
-            <div class="contenedor-img">
-                <img (click)="hamburguerMenu()" src="../../../assets/menu/icons8-close-100.png" alt="">
-            </div>
-            <ul>
-                <li>
-                    <a (click)="hamburguerMenu()" href="#acercaDe">Acerca De</a>
-                </li>
-                <li>
-                    <a (click)="hamburguerMenu()" href="#skills">Skills</a>
-                </li>
-                <li>
-                    <a (click)="hamburguerMenu()" href="#proyectos">Proyectos</a>
-                </li>
-                <li>
-                    <a (click)="hamburguerMenu()" href="" routerLink="/contacto" >Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+  </div>
 </div>
