@@ -50,13 +50,13 @@
       </div>
       <ul>
         <li>
-          <a (click)="hamburguerMenu()" href="#acercaDe">Acerca De</a>
+          <a (click)="hamburguerMenu()" (click)="scrollALaSeccion('acercaDe')">Acerca De</a>
         </li>
         <li>
-          <a (click)="hamburguerMenu()" href="#skills">Skills</a>
+          <a (click)="hamburguerMenu()" (click)="scrollALaSeccion('skills')">Skills</a>
         </li>
         <li>
-          <a (click)="hamburguerMenu()" href="#proyectos">Proyectos</a>
+          <a (click)="hamburguerMenu()" (click)="scrollALaSeccion('proyectos')">Proyectos</a>
         </li>
         <li>
           <a (click)="hamburguerMenu()" href="" routerLink="/contacto"
