@@ -21,7 +21,7 @@
 }
 .contenedor-textoVertical {
   color: #666666;
-  top: 58%;
+  bottom: 10vh;
   display: flex;
   width: 10%;
   z-index: 10;
@@ -65,7 +65,7 @@
   z-index: 10;
   position: fixed;
   right: 0;
-  bottom: 4rem;
+  bottom: 10vh;
 }
 .contenedor-iconos ul {
   padding: 0;
