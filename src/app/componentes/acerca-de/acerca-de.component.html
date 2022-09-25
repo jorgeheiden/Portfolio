@@ -1,13 +1,13 @@
 <div class="contenedor">
         <div class="presentacion">
-            <h1>Hola! Mi nombre es <span>J</span>orge <span>H</span>eidenreich</h1>
-            <p>Soy de Buenos Aires, Argentina. Me especializo como FrontEnd developer, aunque también poseo
+            <h1 #elemento [ngClass]="{'ocultar': ocultar, 'mostrar-elemento1': mostrar}" >Hola! Mi nombre es <span>J</span>orge <span>H</span>eidenreich</h1>
+            <p #elemento [ngClass]="{'ocultar': ocultar, 'mostrar-elemento2': mostrar}" >Soy de Buenos Aires, Argentina. Me especializo como FrontEnd developer, aunque también poseo
                 conocimientos de BackEnd. Apasionado en seguir aprendiendo y creando en forma continua en este extenso
                 mundo de la programación
             </p>
         </div>
         <div class="formacion">
-            <ul class="formacion-desarrollador">
+            <ul class="formacion-desarrollador" #elemento [ngClass]="{'ocultar': ocultar, 'mostrar-elemento1': mostrar}">
                 <li>
                     <h1>Educación:</h1>
                 </li>
@@ -15,7 +15,7 @@
                 <li># JavaScript Algorithms and Data Structures, FreeCodeCamp</li>
                 <li># Full Stack Developer Junior, Argentina Programa</li>
             </ul>
-            <ul class="formacion-formal">
+            <ul class="formacion-formal" #elemento [ngClass]="{'ocultar': ocultar, 'mostrar-elemento2': mostrar}">
                 <li># Abogado, Universidad Nacional De Lomas De Zamora</li>
                 <li># Tecnico Electromecanico, Intituto Tecnico San Cayetano</li>
             </ul>
