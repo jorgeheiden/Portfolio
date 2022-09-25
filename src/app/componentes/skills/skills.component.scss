@@ -115,6 +115,55 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
+//Transicion al hacer scroll
+.ocultar{
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateY(100%);
+}
+.mostrar-elemento1{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 2000ms!important;
+}
+.mostrar-elemento2{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 1800ms!important;
+}
+.mostrar-elemento3{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 1600ms!important;
+}
+.mostrar-elemento4{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 1400ms!important;
+}
+.mostrar-elemento5{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 1200ms!important;
+}
+.mostrar-elemento6{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 1000ms!important;
+}
+.mostrar-elemento7{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 800ms!important;
+}
+
 /*************************************************/
 @media only screen and (max-width: 575px) {
   .contenedor {

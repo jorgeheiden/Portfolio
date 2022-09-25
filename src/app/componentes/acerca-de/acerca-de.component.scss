@@ -79,12 +79,13 @@
   filter: blur(0);
   transform: translateX(0);
   transition: all 900ms;
+  
 }
 .mostrar-elemento2{
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-  transition: all 1.1s;
+  transition: all 1.1s ;
 }
 /******************************************/
 @media only screen and (max-width: 575px) {

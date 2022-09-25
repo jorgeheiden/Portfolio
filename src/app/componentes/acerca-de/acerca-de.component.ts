@@ -15,8 +15,8 @@ export class AcercaDeComponent implements OnInit {
   mostrar = false
 
   ngAfterViewInit(){
-    console.log(this.elemento.nativeElement)
-    const threshold = 0.5
+
+    const threshold = 0.75
     const observer = new IntersectionObserver(
       (entradas) => {
         entradas.forEach( (entrada) =>{
