@@ -1,3 +1,4 @@
+import { PreloaderComponent } from './componentes/preloader/preloader.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'acercade', component: AcercaDeComponent},
   //{ path: 'skills', component: SkillsComponent},
   { path: 'proyectos', component: ProyectosComponent},
-  { path: 'contacto', component: ContactoComponent}
+  { path: 'contacto', component: ContactoComponent},
+  { path: 'preload', component: PreloaderComponent}
 ];
 
 

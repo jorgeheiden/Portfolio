@@ -1,3 +1,4 @@
+import { PreloaderComponent } from './../preloader/preloader.component';
 import { Component, OnInit, HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
@@ -8,11 +9,19 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PortfolioComponent implements OnInit {
 
+  preload= false
+  overflowHidden= true
+  
   constructor() { }
 
   ngOnInit(): void {
-    
+
+    setTimeout( () => {
+      this.preload = true
+      this.overflowHidden = false
+    }, 2500)
+
   }
 
-  
+
 }
