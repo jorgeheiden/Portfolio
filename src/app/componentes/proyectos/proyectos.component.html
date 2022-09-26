@@ -3,7 +3,7 @@
     <h1>Mis <span>Proyectos</span></h1>
   </div>
   <ul>
-    <li class="proyecto">
+    <li class="proyecto" #proyecto [ngClass]="{'ocultar-proyecto': ocultar, 'mostrar-proyecto1':mostrar}">
       <div class="detalles">
         <h1>Pomodoro</h1>
         <p>Reloj Pomodoro. Destinado a mejorar la productividad laboral.</p>
@@ -25,7 +25,7 @@
       <img src="../../../assets/Proyectos/pomodoro.png" alt="" />
     </li>
 
-    <li class="proyecto">
+    <li class="proyecto" #proyecto [ngClass]="{'ocultar-proyecto': ocultar, 'mostrar-proyecto2':mostrar}">
       <div class="detalles">
         <h1>Country Info</h1>
         <p>
@@ -55,7 +55,7 @@
       </div>
       <img src="../../../assets/Proyectos/countryinfo.png" alt="" />
     </li>
-    <li class="proyecto">
+    <li class="proyecto" #proyecto [ngClass]="{'ocultar-proyecto': ocultar, 'mostrar-proyecto3':mostrar}">
       <div class="detalles">
         <h1>Todo-app</h1>
         <p>Completa Aplicacion donde se ponen en practica multiples conocimientos de desarrollo.</p>
@@ -76,7 +76,7 @@
       </div>
       <img src="../../../assets/Proyectos/captura-todoapp2.png" alt="" />
     </li>
-    <li class="proyecto">
+    <li class="proyecto" #proyecto [ngClass]="{'ocultar-proyecto': ocultar, 'mostrar-proyecto4':mostrar}">
       <div class="detalles">
         <h1>Weather-app</h1>
         <p>Aplicacion meteorologica, con buscador y geolocalizacion</p>
@@ -97,7 +97,7 @@
       </div>
       <img src="../../../assets/Proyectos/weather-app.png" alt="" />
     </li>
-    <li class="proyecto">
+    <li class="proyecto" #proyecto [ngClass]="{'ocultar-proyecto': ocultar, 'mostrar-proyecto5':mostrar}">
       <div class="detalles">
         <h1>Portfolio</h1>
         <p>
