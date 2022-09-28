@@ -137,6 +137,46 @@
   transition: background 0.5s ease-out;
 }
 
+//Animacion inicio
+.ocultar{
+  opacity: 0;
+  transform: translateY(100%);
+}
+.elemento1{
+  opacity: 1;
+  transform: translateY(0);
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-delay: 1900ms;
+}
+.elemento2{
+  opacity: 1;
+  transform: translateY(0);
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-delay: 2100ms;
+}
+.elemento3{
+  opacity: 1;
+  transform: translateY(0);
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-delay: 2300ms;
+}
+.elemento4{
+  opacity: 1;
+  transform: translateY(0);
+  transition-property: opacity;
+  transition-duration: 200ms;
+  transition-delay: 2800ms;
+}
+.elemento5{
+  opacity: 1;
+  transform: translateY(0);
+  transition-property: opacity;
+  transition-duration: 200ms;
+  transition-delay: 3000ms;
+}
 
 /********************************/
 @media only screen and (max-width: 575px) {

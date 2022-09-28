@@ -10,10 +10,17 @@ import { ActivatedRoute } from '@angular/router';
 export class NavBarComponent implements OnInit {
   hamburgerMenuClases = false
   hamburgerIcon = "../../../assets/menu/icons8-menu.svg"
+  mostrar = false
+  ocultar = true
 
   constructor(private viewportScroller: ViewportScroller) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.mostrar = true
+      this.ocultar = false
+    }, 2500);
+  }
 
   hamburguerMenu(){
    if(this.hamburgerMenuClases == false){

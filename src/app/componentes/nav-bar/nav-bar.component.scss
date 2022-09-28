@@ -166,6 +166,55 @@
   display: flex;
 }
 
+//Animacion al inicio
+.ocultar{
+  opacity: 0;
+  transform: translateY(100%);
+}
+.elemento1{
+  opacity: 1;
+  transform: translateY(0);
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-delay: 600ms;
+}
+.elemento2{
+  opacity: 1;
+  transform: translateY(0);
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-delay: 800ms;
+}
+.elemento3{
+  opacity: 1;
+  transform: translateY(0);
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-delay: 1000ms;
+}
+.elemento4{
+  opacity: 1;
+  transform: translateY(0);
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-delay: 1200ms;
+}
+.elemento5{
+  opacity: 1;
+  transform: translateY(0);
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-delay: 1400ms;
+  
+}
+.elemento6{
+  opacity: 1;
+  transform: translateY(0);
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-delay: 1600ms;
+  //transition: all 3000ms;
+}
 /********************************/
 @media only screen and (max-width: 600px) {
   .contenedor-nav {

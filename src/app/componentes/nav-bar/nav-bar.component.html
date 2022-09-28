@@ -1,23 +1,23 @@
 <div class="contenedor">
   <div class="contenedor-logo">
-    <img class="logo" src="../../../assets/logo/logoargprog.jpg" alt="" />
+    <img [ngClass]="{'ocultar': ocultar, 'elemento1': mostrar}" class="logo" src="../../../assets/logo/logoargprog.jpg" alt="" />
   </div>
   <div class="contenedor-nav">
     <ul>
       <li>
-        <a (click)="scrollALaSeccion('acercaDe')">Acerca De</a>
+        <a [ngClass]="{'ocultar': ocultar, 'elemento2': mostrar}" (click)="scrollALaSeccion('acercaDe')">Acerca De</a>
       </li>
       <li>
-        <a (click)="scrollALaSeccion('skills')">Skills</a>
+        <a [ngClass]="{'ocultar': ocultar, 'elemento3': mostrar}" (click)="scrollALaSeccion('skills')">Skills</a>
       </li>
       <li>
-        <a (click)="scrollALaSeccion('proyectos')">Proyectos</a>
+        <a [ngClass]="{'ocultar': ocultar, 'elemento4': mostrar}" (click)="scrollALaSeccion('proyectos')">Proyectos</a>
       </li>
       <li>
-        <a href="" routerLink="/contacto">Contacto</a>
+        <a [ngClass]="{'ocultar': ocultar, 'elemento5': mostrar}" href="" routerLink="/contacto">Contacto</a>
       </li>
       <li class="contenedor-cv">
-        <a
+        <a [ngClass]="{'ocultar': ocultar, 'elemento6': mostrar}"
           class="cv"
           target="_blank"
           href="https://firebasestorage.googleapis.com/v0/b/imgproyectos-d5ba4.appspot.com/o/CV%2FCV%20-%20Jorge%20Heidenreich.pdf?alt=media&token=af4197d2-e65c-409e-8b97-9788b2179782"

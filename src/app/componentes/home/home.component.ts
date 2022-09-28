@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  mostrar = false
+  ocultar = true
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout( () =>{
+      this.mostrar = true
+      this.ocultar = false
+    }, 2500)
   }
+
+
 
 }

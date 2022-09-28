@@ -1,15 +1,15 @@
 <div class="contenedor">
     <app-nav-bar></app-nav-bar>
     <div class="contenedor-home">
-        <div class="contenedor-textoVertical">
+        <div class="contenedor-textoVertical" [ngClass]="{'ocultar': ocultar, 'elemento4': mostrar}" >
             <p class="texto-vertical">Software Developer</p>
         </div>
         <div class="contenedor-introduccion">
-            <p class="p1">Bienvenido a mi Portfolio</p>
-            <p class="p2">Soy Jorge Heidenreich</p>
-            <p class="p3">Desarrollador Web</p>
+            <p class="p1" [ngClass]="{'ocultar': ocultar, 'elemento1': mostrar}">Bienvenido a mi Portfolio</p>
+            <p class="p2" [ngClass]="{'ocultar': ocultar, 'elemento2': mostrar}">Soy Jorge Heidenreich</p>
+            <p class="p3" [ngClass]="{'ocultar': ocultar, 'elemento3': mostrar}">Desarrollador Web</p>
         </div>
-        <div class="contenedor-iconos">
+        <div class="contenedor-iconos" [ngClass]="{'ocultar': ocultar, 'elemento5': mostrar}">
             <ul>
                 <li>
                     <a class="mail" href="" routerLink="/contacto"></a>
