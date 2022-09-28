@@ -107,4 +107,10 @@
   .formacion ul {
     width: 100%;
   }
+
+  //Desactiva animaciol al hacer scrool
+  .ocultar{
+    filter: blur(0);
+    transform: translate(0);
+  }
 }

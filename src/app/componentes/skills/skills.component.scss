@@ -192,4 +192,10 @@
     font-size: 0.9rem;
     height: 35%;
   }
+
+  //Animacion scroll
+  .ocultar{
+    filter: blur(0);
+    transform: translate(0);
+  }
 }

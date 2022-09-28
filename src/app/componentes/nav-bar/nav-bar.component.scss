@@ -120,6 +120,7 @@
   top: 0;
   width: 100%;
   height: 100vh;
+  z-index: 10;
 }
 .menuDesplegable-transparente {
   width: 35%;
@@ -230,6 +231,11 @@
     display: block;
     width: 100%;
   }
-  @media only screen and (min-width: 600px) {
+
+  //animacion al cargar
+  .logo{
+    opacity: 1;
+    transform: translate(0);
   }
+  
 }

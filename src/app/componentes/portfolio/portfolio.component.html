@@ -1,8 +1,8 @@
-<div class="contenedor" [ngClass]="{'overflow-hidden': overflowHidden}">
-        <app-preloader [ngClass]="{'preload': preload}"></app-preloader>
+<div class="contenedor"  [ngClass]="{'overflow-hidden': overflowHidden}">
+        <app-preloader class="preload" *ngIf="preload" ></app-preloader> 
         <app-home></app-home>
         <app-acerca-de id="acercaDe"></app-acerca-de>
         <app-skills id="skills"></app-skills>
         <app-proyectos id="proyectos"></app-proyectos>
 </div>
-    
+    <!--[ngClass]="{'preload': preload}"-->

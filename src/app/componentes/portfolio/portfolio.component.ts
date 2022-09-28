@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PortfolioComponent implements OnInit {
 
-  preload= false
+  preload= true
   overflowHidden= true
   
   constructor() { }
@@ -17,7 +17,7 @@ export class PortfolioComponent implements OnInit {
   ngOnInit(): void {
 
     setTimeout( () => {
-      this.preload = true
+      this.preload = false
       this.overflowHidden = false
     }, 2500)
 
