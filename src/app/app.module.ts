@@ -11,6 +11,7 @@ import { SkillsComponent } from './componentes/skills/skills.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { PreloaderComponent } from './componentes/preloader/preloader.component';
+import { Proyectos2Component } from './componentes/proyectos2/proyectos2.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PreloaderComponent } from './componentes/preloader/preloader.component'
     SkillsComponent,
     ProyectosComponent,
     ContactoComponent,
-    PreloaderComponent
+    PreloaderComponent,
+    Proyectos2Component,
   ],
   imports: [
     BrowserModule,
