@@ -19,7 +19,7 @@ export class PortfolioComponent implements OnInit {
     setTimeout( () => {
       this.preload = false
       this.overflowHidden = false
-    }, 2500)
+    }, 1700)
 
   }
 
