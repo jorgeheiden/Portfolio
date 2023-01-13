@@ -13,6 +13,7 @@ import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { PreloaderComponent } from './componentes/preloader/preloader.component';
 import { Proyectos2Component } from './componentes/proyectos2/proyectos2.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { ProyectosDestacadosComponent } from './componentes/proyectos-destacados/proyectos-destacados.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { FooterComponent } from './componentes/footer/footer.component';
     PreloaderComponent,
     Proyectos2Component,
     FooterComponent,
+    ProyectosDestacadosComponent,
   ],
   imports: [
     BrowserModule,
